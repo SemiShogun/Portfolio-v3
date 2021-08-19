@@ -10,5 +10,18 @@ module.exports = {
     {
       use: "gridsome-plugin-typescript",
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "content/blogs/**/*.md",
+        typeName: "Blog",
+        route: "/blog/:slug",
+      },
+    },
   ],
+  transformers: {
+    remark: {
+      plugins: ["@gridsome/remark-prismjs"],
+    },
+  },
 };

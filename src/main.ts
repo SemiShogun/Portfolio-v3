@@ -4,6 +4,12 @@
 import { ClientApiConstructor } from "./types";
 
 /**
+ * Prismjs CSS theme
+ * Used for adding syntax highlighting to all Markdown code blocks.
+ */
+import 'prismjs/themes/prism.css';
+
+/**
  * Layout imports
  */
 import DefaultLayout from "~/layouts/Default.vue";
