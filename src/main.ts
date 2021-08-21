@@ -10,6 +10,11 @@ import { ClientApiConstructor } from "./types";
 import 'prismjs/themes/prism.css';
 
 /**
+ * Necessary for importing the Sass-loader dependency.
+ */
+import '~/assets/styles/styles.scss'
+
+/**
  * Layout imports
  */
 import DefaultLayout from "~/layouts/Default.vue";
