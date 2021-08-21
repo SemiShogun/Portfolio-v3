@@ -15,5 +15,11 @@
     "gridsome-plugin-typescript": "^0.4.0",
     "ts-loader": "^8.2.0",
     "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^4.1.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "^2.2.7"
   }
 }
