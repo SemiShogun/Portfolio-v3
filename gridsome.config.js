@@ -3,6 +3,8 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const tailwindcss = require("tailwindcss");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   siteName: "Gridsome",
@@ -22,6 +24,13 @@ module.exports = {
   transformers: {
     remark: {
       plugins: ["@gridsome/remark-prismjs"],
+    },
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [tailwindcss, autoprefixer],
+      },
     },
   },
 };

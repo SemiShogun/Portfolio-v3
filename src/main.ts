@@ -12,7 +12,7 @@ import 'prismjs/themes/prism.css';
 /**
  * Necessary for importing the Sass-loader dependency.
  */
-import '~/assets/styles/styles.scss'
+import '~/assets/styles/styles.scss';
 
 /**
  * Layout imports
