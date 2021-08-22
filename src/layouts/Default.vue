@@ -1,8 +1,10 @@
 <template>
-  <div class="layout">
-    <Navbar />
-    <div class="slot">
-      <slot />
+  <div class="h-screen default">
+    <div class="sm:mx-20 mx-5">
+      <Navbar />
+      <div class="flex flex-grow px-2 max-w-7xl mx-auto">
+        <slot class="slot" />
+      </div>
     </div>
     <Footer />
   </div>
@@ -27,13 +29,4 @@ query {
 </static-query>
 
 <style lang="scss" scoped>
-.layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.slot {
-}
 </style>

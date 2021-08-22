@@ -1,6 +1,6 @@
 <template>
-  <div class="navbar w-full">
-    <nav class="mx-auto px-8">
+  <header class="navbar w-full">
+    <nav class="mx-auto">
       <div class="max-w-7xl mx-auto">
         <div class="flex justify-between">
           <!-- logo -->
@@ -122,10 +122,6 @@
         ></g-link>
       </div>
     </nav>
-
-    <div class="py-32">
-      <h2 class="font-extrabold text-6xl text-4xl">Navbars in Tailwind!</h2>
-    </div>
     <!-- <div id="svglogo"> -->
     <!-- <svg
         id="logo"
@@ -167,7 +163,7 @@
         />
       </svg> -->
     <!-- </div> -->
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
@@ -181,17 +177,11 @@ export default defineComponent({
       menu.classList.toggle("hidden");
     }
   },
-  setup() {
-  },
 })
 </script>
 
 
 <style lang="scss" scoped>
-.header {
-  width: 100%;
-}
-
 // .options {
 //   display: flex;
 // }

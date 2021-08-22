@@ -2,6 +2,11 @@
 @import "./variables";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Nunito", sans-serif;
 }
