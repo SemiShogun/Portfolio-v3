@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es5",
+    "module": "es6",
     "moduleResolution": "node",
-    "strict": true,
-    "jsx": "preserve",
+    "noImplicitReturns": true,
+    "outDir": "./built/",
     "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": ["esnext", "dom"]
+    "strict": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "paths": {
+    "~/*": ["./src/*"],
+    "@/*": ["./src/*"]
+  },
+  "include": ["./src/**/*"]
 }
