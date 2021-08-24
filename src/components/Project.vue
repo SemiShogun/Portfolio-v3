@@ -7,6 +7,7 @@
         h-96
         mx-3
         my-2
+        w-full
         rounded-3xl
         flex flex-col
         justify-around
