@@ -13,11 +13,7 @@
     "
   >
     <div class="flex flex-row w-1/6 my-2 mx-2">
-      <g-image
-        :src="blog.image"
-        alt="blogpost image placeholder"
-        class="object-contain"
-      />
+      <g-image :src="blog.image" alt="blogpost_placeholder" fit="contain" />
     </div>
     <div class="w-5/6 my-2 mx-2">
       <!-- <p v-html="blog.date" /> -->
