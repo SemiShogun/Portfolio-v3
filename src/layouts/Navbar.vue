@@ -36,11 +36,6 @@
                   class="py-4 px-3 text-gray-700 hover:text-gray-900"
                   >Blogs</g-link
                 >
-                <g-link
-                  to="/about"
-                  class="py-4 px-3 text-gray-700 hover:text-gray-900"
-                  >About</g-link
-                >
               </div>
             </div>
             <!-- secondary nav -->
