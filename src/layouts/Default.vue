@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen default">
+  <div id="default" class="h-screen defaultbg-white dark:bg-black">
     <div class="sm:mx-20 mx-5">
       <Navbar />
-      <div class="flex flex-grow px-2 max-w-7xl mx-auto">
-        <slot class="slot" />
+      <div class="flex flex-col flex-grow px-2 max-w-7xl mx-auto">
+        <slot class="slot w-full" />
       </div>
     </div>
     <Footer />
