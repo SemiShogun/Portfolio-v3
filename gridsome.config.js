@@ -7,7 +7,7 @@ const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
-  siteName: "Gridsome",
+  siteName: "Jamie Lam",
   plugins: [
     {
       use: "gridsome-plugin-typescript",
