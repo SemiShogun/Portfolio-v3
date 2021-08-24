@@ -30,7 +30,7 @@ import Project from "../components/Project.vue"
 
 export default defineComponent({
   metaInfo: {
-    title: "Hello world!",
+    title: "Home",
   },
   components: { Project },
 })
