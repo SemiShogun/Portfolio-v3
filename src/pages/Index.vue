@@ -1,40 +1,55 @@
 <template>
-  <Layout>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-      excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
-      Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener"
-        >Gridsome Docs</a
-      >
-      <a
-        href="https://github.com/gridsome/gridsome"
-        target="_blank"
-        rel="noopener"
-        >GitHub</a
-      >
-    </p>
+  <Layout id="index">
+    <div
+      id="introduction"
+      class="h-screen w-full flex flex-col"
+      style="margin-top: -56px; z-index: -1"
+    >
+      <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+      <div class="h-screen w-full flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-bold">Heya! I'm Jamie</h1>
+        <h3 class="text-4xl">I love to Code_ 💻</h3>
+      </div>
+    </div>
+    <div id="projects" class="w-full flex flex-col">
+      <div class="w-full flex items-center justify-center my-4">
+        <h1 class="text-2xl font-bold">Currently Working On...</h1>
+      </div>
+      <Project
+        v-for="edge in $page.allProject.edges"
+        :key="edge.node.id"
+        :project="edge.node"
+      />
+    </div>
   </Layout>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+import Project from "../components/Project.vue"
+
+export default defineComponent({
   metaInfo: {
-    title: "Hello, world!"
-  }
-};
+    title: "Hello world!",
+  },
+  components: { Project },
+})
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
+<page-query>
+query {
+  allProject {
+    totalCount
+    edges {
+      node {
+        id
+        title
+        image
+        description
+        date (format: "D MMMM YYYY")
+        link
+        }
+    }  
+  }
 }
-</style>
+</page-query>
