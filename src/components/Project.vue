@@ -40,12 +40,12 @@
         "
       >
         <div class="flex flex-col justify-start items-baseline">
-          <h1
+          <div
             v-html="project.title"
             class="text-lg font-normal mb-0 text-gray-600 font-sans"
           />
         </div>
-        <p v-html="project.description" class="text-xs text-gray-500 w-4/5" />
+        <div v-html="project.description" class="text-xs text-gray-500 w-4/5" />
         <div class="w-full flex justify-start items-center">
           <g-link
             :to="project.link"

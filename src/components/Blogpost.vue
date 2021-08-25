@@ -16,10 +16,8 @@
       <g-image :src="blog.image" alt="blogpost_placeholder" fit="contain" />
     </div>
     <div class="w-5/6 my-2 mx-2">
-      <!-- <p v-html="blog.date" /> -->
-      <h1 v-html="blog.title" class="mb-3 font-bold" />
-      <p v-html="blog.description" class="mb-3" />
-      <!-- <p v-html="blog.categories" /> -->
+      <div v-html="blog.title" class="mb-3 font-bold" />
+      <div v-html="blog.description" class="mb-3" />
       <g-link :to="blog.path" class="text-blue-400 hover:text-blue-600"
         >Read More...</g-link
       >
