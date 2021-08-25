@@ -18,8 +18,8 @@
     <div class="w-5/6 my-2 mx-2">
       <div v-html="blog.title" class="mb-3 font-bold" />
       <div v-html="blog.description" class="mb-3" />
-      <g-link :to="blog.path" class="text-blue-400 hover:text-blue-600"
-        >Read More...</g-link
+      <div class="text-blue-400 hover:text-blue-600"
+        >Read More...</div
       >
     </div>
   </g-link>
