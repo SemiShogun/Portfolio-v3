@@ -42,6 +42,11 @@
 import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
+  metaInfo() {
+    return {
+      title: 'Blog',
+    }
+  },
 })
 </script>
 

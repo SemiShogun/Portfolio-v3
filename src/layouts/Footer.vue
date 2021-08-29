@@ -77,7 +77,7 @@
           </div>
         </div>
         <div class="mb-2 text-black dark:text-white">
-          Made with 💖 | Copyright © 2021 Jamie Lam.
+          Made with 💖 | Copyright © 2021 Jamie.
         </div>
       </div>
     </footer>
