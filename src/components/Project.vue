@@ -15,7 +15,7 @@
         items-center
         overflow-hidden
         sm:flex-row
-        sm:h-52
+        sm:h-56
         sm:w-3/5
         md:w-3/5
       "
@@ -55,7 +55,7 @@
         </div>
         <div
           v-html="project.description"
-          class="text-xs w-4/5 text-black dark:text-white"
+          class="text-md w-4/5 text-black dark:text-white"
         />
         <div class="w-full flex justify-start items-center">
           <g-link
