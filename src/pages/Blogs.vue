@@ -1,7 +1,9 @@
 <template>
   <Layout id="blogs">
     <div class="w-full min-h-screen flex flex-col justify-start items-center">
-      <h1 class="text-2xl font-semibold mb-5">Recent Blogs</h1>
+      <h1 class="text-2xl font-semibold mb-5 text-black dark:text-white">
+        Recent Blogs
+      </h1>
       <BlogPost
         v-for="edge in $page.allBlog.edges"
         :key="edge.node.id"

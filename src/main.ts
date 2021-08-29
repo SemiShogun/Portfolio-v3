@@ -7,7 +7,7 @@ import { ClientApiConstructor } from "./types";
  * Prismjs CSS theme
  * Used for adding syntax highlighting to all Markdown code blocks.
  */
-import 'prismjs/themes/prism.css';
+import 'prismjs/themes/prism-tomorrow.css';
 
 /**
  * Necessary for importing the Sass-loader dependency.
