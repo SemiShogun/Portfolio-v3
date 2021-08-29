@@ -68,7 +68,7 @@
                     data-darkreader-inline-fill=""
                   ></path></svg
               ></g-link>
-              <ThemeSwitcher />
+              <ThemeSwitcher class="py-2 px-3" />
             </div>
 
             <!-- Hamburger icon -->
