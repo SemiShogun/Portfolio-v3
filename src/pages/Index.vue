@@ -2,9 +2,9 @@
   <div id="introduction" class="w-full flex flex-col" style="margin-top: -64px">
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <div class="h-screen w-full flex flex-col items-center justify-center">
-      <h1 class="text-5xl font-bold text-black dark:text-white">
+      <div class="text-5xl font-bold text-black dark:text-white">
         Heya! I'm Jamie
-      </h1>
+      </div>
       <div class="text-5xl text-black dark:text-white">
         I love to
         <ClientOnly>
@@ -26,9 +26,9 @@
     </div>
     <div id="projects" class="w-full flex flex-col">
       <div class="w-full flex items-center justify-center my-4">
-        <h1 class="text-2xl font-bold text-black dark:text-white">
+        <div class="text-2xl font-bold text-black dark:text-white">
           Currently Working On...
-        </h1>
+        </div>
       </div>
       <Project
         v-for="edge in $page.allProject.edges"
