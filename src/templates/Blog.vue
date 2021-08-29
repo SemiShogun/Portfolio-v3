@@ -1,43 +1,41 @@
 <template>
-  <Layout id="blog">
-    <div class="md:mx-20 mx-4">
-      <div class="w-full flex flex-col justify-start items-start">
-        <div
-          class="
-            w-full
-            flex
-            justify-center
-            mt-4
-            text-xl
-            font-bold
-            text-black
-            dark:text-white
-          "
-        >
-          {{ $page.blog.title }}
-        </div>
-        <div
-          v-html="$page.blog.date"
-          class="
-            w-full
-            flex flex-row
-            justify-center
-            items-center
-            mb-8
-            text-sm text-black
-            dark:text-white
-          "
-        />
-        <div
-          v-html="$page.blog.content"
-          class="w-full my-4 text-md text-black dark:text-white"
-        />
-        <g-link to="/blogs" class="text-blue-400 hover:text-blue-600">
-          &larr; Go Back</g-link
-        >
+  <div class="md:mx-20 mx-4">
+    <div class="w-full flex flex-col justify-start items-start">
+      <div
+        class="
+          w-full
+          flex
+          justify-center
+          mt-4
+          text-xl
+          font-bold
+          text-black
+          dark:text-white
+        "
+      >
+        {{ $page.blog.title }}
       </div>
+      <div
+        v-html="$page.blog.date"
+        class="
+          w-full
+          flex flex-row
+          justify-center
+          items-center
+          mb-8
+          text-sm text-black
+          dark:text-white
+        "
+      />
+      <div
+        v-html="$page.blog.content"
+        class="w-full my-4 text-md text-black dark:text-white"
+      />
+      <g-link to="/blogs" class="text-blue-400 hover:text-blue-600">
+        &larr; Go Back</g-link
+      >
     </div>
-  </Layout>
+  </div>
 </template>
 
 <script lang="ts">
