@@ -1,5 +1,5 @@
 <template>
-  <div id="default" class="h-screen defaultbg-white dark:bg-black">
+  <div id="default" class="default bg-white dark:bg-dark-gray">
     <div class="sm:mx-20 mx-5">
       <Navbar />
       <div class="flex flex-col flex-grow px-2 max-w-7xl mx-auto">

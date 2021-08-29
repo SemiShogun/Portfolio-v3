@@ -1,0 +1,15 @@
+$chosen-color: #118ab2;
+
+.vue-typer .custom.char.typed {
+  color: $chosen-color;
+}
+
+.vue-typer .custom.char.selected {
+  color: $chosen-color;
+  background-color: transparent;
+  text-decoration: line-through;
+}
+
+.vue-typer .custom.caret {
+  background-color: $chosen-color;
+}
