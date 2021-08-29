@@ -3,7 +3,7 @@
     <footer class="w-full flex flex-col justify-center items-center">
       <div class="flex flex-col justify-center items-center">
         <div class="w-full flex flex-row justify-around items-center">
-          <h1>
+          <div>
             <g-link to="https://github.com/SemiShogun" class="py-2 px-3"
               ><svg
                 aria-hidden="true"
@@ -23,8 +23,8 @@
                   data-darkreader-inline-fill=""
                 ></path></svg
             ></g-link>
-          </h1>
-          <h1>
+          </div>
+          <div>
             <g-link to="https://twitter.com/NectoJ" class="py-2 px-3"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,8 +52,8 @@
                   data-darkreader-inline-fill=""
                 /></svg
             ></g-link>
-          </h1>
-          <h1>
+          </div>
+          <div>
             <g-link
               to="https://www.linkedin.com/in/jamie-lam-123abc/"
               class="py-2 px-3"
@@ -74,11 +74,11 @@
                 />
               </svg>
             </g-link>
-          </h1>
+          </div>
         </div>
-        <h1 class="mb-2 text-black dark:text-white">
-          Made with 💖 | Copyright © 2021 Jamie Lam.
-        </h1>
+        <div class="mb-2 text-black dark:text-white">
+          Made with 💖 | Copyright © 2021 Jamie.
+        </div>
       </div>
     </footer>
   </div>

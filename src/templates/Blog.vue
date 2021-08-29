@@ -7,7 +7,7 @@
           flex
           justify-center
           mt-4
-          text-xl
+          text-2xl
           font-bold
           text-black
           dark:text-white
@@ -42,6 +42,11 @@
 import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
+  metaInfo() {
+    return {
+      title: 'Blog',
+    }
+  },
 })
 </script>
 
@@ -58,5 +63,5 @@ query Blog ($path: String!) {
 }
 </page-query>
 
-<style>
+<style lang="scss" scoped>
 </style>
