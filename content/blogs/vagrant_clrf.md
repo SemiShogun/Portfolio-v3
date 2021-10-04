@@ -1,5 +1,5 @@
 ---
-title: "My experience with Remark42"
+title: "Vagrant problem. Converting Unix text files to Dos"
 description: "I stumbled upon a small problem converting Unix Text to Dos Text."
 date: 2021-10-04
 image: ../images/thumbnails/directory.png
