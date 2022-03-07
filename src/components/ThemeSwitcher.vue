@@ -58,7 +58,6 @@ export default defineComponent({
     const defaultTheme = userPrefersDark ? 'dark' : 'light'
     const theme = localStorage.getItem('theme') || defaultTheme
     this.setTheme(theme)
-    console.log("theme", theme);
   },
   methods: {
     toggleTheme() {
@@ -72,42 +71,9 @@ export default defineComponent({
       } else {
         document.documentElement.classList.remove('dark')
       }
-      console.log('new theme', newTheme);
       localStorage.setItem('theme', newTheme)
     }
   }
-  //   setup() {
-  //     const theme = ref<string>('');
-
-  //     const setTheme = (newTheme: string) => {
-  //       theme.value = newTheme
-  //       if (theme.value === 'dark') {
-  //         document.documentElement.classList.add('dark')
-  //       } else {
-  //         document.documentElement.classList.remove('dark')
-  //       }
-  //       localStorage.setItem('theme', newTheme)
-  //     }
-
-  //     const toggleTheme = () => {
-  //       const newTheme: string = theme.value === 'light' ? 'dark' : 'light';
-  //       setTheme(newTheme)
-  //     }
-
-  //     onMounted(() => {
-  //       const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-  //       const defaultTheme = userPrefersDark ? 'dark' : 'light'
-  //       const theme = localStorage.getItem('theme') || defaultTheme
-  //       console.log("pass")
-  //       setTheme(theme)
-  //     })
-
-  //     return {
-  //       theme,
-  //       setTheme,
-  //       toggleTheme
-  //     }
-  //   },
 })
 </script>
 

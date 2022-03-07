@@ -41,6 +41,8 @@
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
+import { Remark } from '../types/Remark';
+
 
 export default defineComponent({
   metaInfo() {
@@ -50,7 +52,7 @@ export default defineComponent({
   },
   data() {
     return {
-      remark42Instance: null,
+      remark42Instance: null as any
     }
   },
   watch: {
@@ -68,7 +70,8 @@ export default defineComponent({
     }
   },
   methods: {
-    initRemark42() {
+    initRemark42(): void {
+
       if ((window as any).REMARK42) {
         if (this.remark42Instance) {
           (this.remark42Instance as any).destroy()
@@ -82,9 +85,7 @@ export default defineComponent({
     },
   },
   beforeRouteLeave() {
-    // console.log('hello');
     if (this.remark42Instance) {
-      // console.log('pass');
       (this.remark42Instance as any).destroy()
     }
   },
