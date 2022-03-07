@@ -31,7 +31,7 @@
         v-html="$page.blog.content"
         class="w-full my-4 text-md text-black dark:text-white"
       />
-      <g-link to="/blogs" class="text-blue-400 hover:text-blue-600">
+      <g-link to="/blogs" class="mb-8 text-blue-400 hover:text-blue-600">
         &larr; Go Back</g-link
       >
 
@@ -48,6 +48,9 @@ export default defineComponent({
   metaInfo() {
     return {
       title: 'Blog',
+      script: [
+        { src: 'https://cdn.commento.io/js/commento.js', defer: true }
+      ]
     }
   },
 })
