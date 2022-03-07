@@ -34,6 +34,8 @@
       <g-link to="/blogs" class="text-blue-400 hover:text-blue-600">
         &larr; Go Back</g-link
       >
+
+      <div id="commento"></div>
       
     </div>
   </div>
