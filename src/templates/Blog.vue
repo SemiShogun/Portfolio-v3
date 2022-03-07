@@ -41,8 +41,6 @@
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
-import { Remark } from '../types/Remark';
-
 
 export default defineComponent({
   metaInfo() {
@@ -55,10 +53,20 @@ export default defineComponent({
       remark42Instance: null as any
     }
   },
-  watch: {
-    '$route.path'() {
-      this.initRemark42()
-    },
+  beforeRouteLeave() {
+    if (this.remark42Instance) {
+      (this.remark42Instance as any).destroy()
+    }
+  },
+  beforeDestroy() {
+    if (this.remark42Instance) {
+      (this.remark42Instance as any).destroy()
+    }
+  },
+  beforeRouteUpdate() {
+    if (this.remark42Instance) {
+      (this.remark42Instance as any).destroy()
+    }
   },
   mounted() {
     if ((window as any).REMARK42) {
@@ -71,7 +79,6 @@ export default defineComponent({
   },
   methods: {
     initRemark42(): void {
-
       if ((window as any).REMARK42) {
         if (this.remark42Instance) {
           (this.remark42Instance as any).destroy()
@@ -79,16 +86,13 @@ export default defineComponent({
 
         this.remark42Instance = (window as any).REMARK42.createInstance({
           node: this.$refs.remark42 as HTMLElement,
+          host: process.env.REMARK42_HOST,
           site_id: process.env.REMARK42_SITE_ID
         })
       }
     },
   },
-  beforeRouteLeave() {
-    if (this.remark42Instance) {
-      (this.remark42Instance as any).destroy()
-    }
-  },
+
 })
 </script>
 
