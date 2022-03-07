@@ -6,21 +6,4 @@
   <body ${bodyAttrs}>
     ${app} ${scripts}
   </body>
-
-  <script>
-    (function() {
-      var host = process.env.REMARK42_HOST; // Your remark42 host
-      var components = ["embed"]; // Your choice of remark42 components
-
-      (function(c) {
-        for (let i = 0; i < c.length; i++) {
-          const d = document;
-          const s = d.createElement("script");
-          s.src = remark_config.host + "/web/" + c[i] + ".js";
-          s.defer = true;
-          (d.head || d.body).appendChild(s);
-        }
-      })(components);
-    });
-  </script>
 </html>

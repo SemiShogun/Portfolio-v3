@@ -34,7 +34,7 @@
       <g-link to="/blogs" class="text-blue-400 hover:text-blue-600">
         &larr; Go Back</g-link
       >
-      <div id="remark42"></div>
+      
     </div>
   </div>
 </template>
@@ -48,51 +48,6 @@ export default defineComponent({
       title: 'Blog',
     }
   },
-  data() {
-    return {
-      remark42Instance: null as any
-    }
-  },
-  beforeRouteLeave() {
-    if (this.remark42Instance) {
-      (this.remark42Instance as any).destroy()
-    }
-  },
-  beforeDestroy() {
-    if (this.remark42Instance) {
-      (this.remark42Instance as any).destroy()
-    }
-  },
-  beforeRouteUpdate() {
-    if (this.remark42Instance) {
-      (this.remark42Instance as any).destroy()
-    }
-  },
-  mounted() {
-    if ((window as any).REMARK42) {
-      this.initRemark42()
-    } else {
-      window.addEventListener('REMARK42::ready', () => {
-        this.initRemark42()
-      })
-    }
-  },
-  methods: {
-    initRemark42(): void {
-      if ((window as any).REMARK42) {
-        if (this.remark42Instance) {
-          (this.remark42Instance as any).destroy()
-        }
-
-        this.remark42Instance = (window as any).REMARK42.createInstance({
-          node: this.$refs.remark42 as HTMLElement,
-          host: process.env.REMARK42_HOST,
-          site_id: process.env.REMARK42_SITE_ID
-        })
-      }
-    },
-  },
-
 })
 </script>
 
