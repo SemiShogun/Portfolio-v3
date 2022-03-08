@@ -77,12 +77,24 @@
           </div>
         </div>
         <div class="mb-2 text-black dark:text-white">
-          Made with 💖 | Copyright © 2021 Jamie.
+          Made with 💖 | Copyright © {{ currentYear }} Jamie.
         </div>
       </div>
     </footer>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    }
+  },
+})
+</script>
 
 <style lang="scss" scoped>
 </style>

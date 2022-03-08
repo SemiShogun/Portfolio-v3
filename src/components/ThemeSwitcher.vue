@@ -58,6 +58,7 @@ export default defineComponent({
     const defaultTheme = userPrefersDark ? 'dark' : 'light'
     const theme = localStorage.getItem('theme') || defaultTheme
     this.setTheme(theme)
+    this.$emit('changeTheme', theme);
   },
   methods: {
     toggleTheme() {
@@ -71,6 +72,7 @@ export default defineComponent({
       } else {
         document.documentElement.classList.remove('dark')
       }
+      this.$emit('changeTheme', newTheme);
       localStorage.setItem('theme', newTheme)
     }
   }
