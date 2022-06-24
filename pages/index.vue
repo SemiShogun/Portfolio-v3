@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>Heya doc</h1>
-        <NuxtLink to="/blog/">Blog</NuxtLink>
-    </div>
+    <main>
+        <h1>Index</h1>
+        <BlogList/>
+    </main>
 </template>
