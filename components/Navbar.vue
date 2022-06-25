@@ -1,8 +1,11 @@
 <template>
-  <div class="Navbar">
+  <div class="NavBar">
     navbar
-    <nuxt-link to="/">
+    <NuxtLink to="/">
       Home
-    </nuxt-link>
+    </NuxtLink>
+    <NuxtLink to="/blog/tags">
+      Tags
+    </NuxtLink>
   </div>
 </template>

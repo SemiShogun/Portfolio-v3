@@ -1,7 +1,9 @@
 ---
 title: "Pepega"
 date: "24-6-2022"
-tags: ['Memes', 'Programming']
+tags: 
+- Memes
+- Programming
 ---
 
 # Hello World

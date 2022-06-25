@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <div v-for="(blog, index) in blogList" :key="index">
+  <div>
+    <div v-for="blog in blogList" :key="blog._path">
       <NuxtLink :to="blog._path">
         {{ blog.title }}
       </NuxtLink>
@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 const { data: blogList } = useAsyncData("blogList", () => {
   return queryContent("/blog").find();
 });

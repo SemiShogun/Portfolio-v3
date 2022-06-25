@@ -13,7 +13,4 @@ export default defineNuxtConfig({
       theme: "dracula",
     },
   },
-  pageTransition: {
-    "page-fade": true,
-  },
 });

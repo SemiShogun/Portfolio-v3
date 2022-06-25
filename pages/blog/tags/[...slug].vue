@@ -1,5 +1,5 @@
 <template>
   <div>
-    <ContentDoc />
+    <TagBlogList />
   </div>
 </template>
