@@ -1,6 +1,7 @@
 ---
 title: "Pepega"
 date: "24-6-2022"
+description: "blablablablablablablablablablablablablablablablablablablablablablablabla"
 tags: 
 - Memes
 - Programming
