@@ -3,21 +3,38 @@
 @import "variables/colors.scss";
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 // Global element stylings
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: $dark-grey-40;
-    color: $white;
-    max-width: 50em;
-    margin: 0 auto;
-    line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  background-color: $dark-grey-40;
+  color: $white;
+  max-width: 50em;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
 a {
-    color: $green;
-    text-decoration: none;
+  color: $green;
+  text-decoration: none;
 }
 
+/** Page Transitions */
+.page {
+  &-enter-from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  &-enter-active,
+  &-leave-active {
+    transition: all 0.2s;
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
+}

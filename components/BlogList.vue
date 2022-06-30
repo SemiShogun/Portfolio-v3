@@ -4,12 +4,17 @@
       <div class="blog-list__item">
         <NuxtLink class="blog-list__head" :to="blog._path">
           <b>{{ blog.title }}</b>
-          <br>
+          <br />
           {{ blog.description }}
         </NuxtLink>
         <div class="blog-list__meta">
           <MetaTag :meta="blog.date" :type="'date'" />
-          <MetaTag v-for="tag in blog.tags" :key="tag" :meta="tag" :type="'tag'" />
+          <MetaTag
+            v-for="tag in blog.tags"
+            :key="tag"
+            :meta="tag"
+            :type="'tag'"
+          />
         </div>
       </div>
     </div>
@@ -28,6 +33,7 @@ const { data: blogList } = useAsyncData("blogList", () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
 
   > a {
     width: 100%;
@@ -40,20 +46,18 @@ const { data: blogList } = useAsyncData("blogList", () => {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    margin: 1rem 0;
     padding: 1.5rem 0;
   }
 
   &__head {
-    max-width: 70%;
+    // max-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     word-break: break-all;
-    margin: 0 1rem;
-    flex-basis: 80%;
+    flex-basis: 70%;
   }
 
   &__meta {
@@ -62,9 +66,7 @@ const { data: blogList } = useAsyncData("blogList", () => {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 1rem;
-    flex-basis: 20%;
+    flex-basis: 30%;
   }
 }
-
 </style>

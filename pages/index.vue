@@ -1,9 +1,15 @@
 <template>
   <main>
     <h1>Index</h1>
-    Blogs
-    <BlogList />
+    Blogs aynidgndifgdf aynidgndifgdf aynidgndifgdf aynidgndifgdf aynidgndifgdf
+    aynidgndifgdf aynidgndifgdf aynidgndifgdf aynidgndifgdf
 
-    <br>
+    <BlogList />
   </main>
 </template>
+
+<script setup>
+definePageMeta({
+  layout: "default",
+});
+</script>
