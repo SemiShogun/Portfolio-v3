@@ -4,7 +4,7 @@
       <div class="blog-list__item">
         <NuxtLink class="blog-list__head" :to="blog._path">
           <b>{{ blog.title }}</b>
-          <br />
+          <br>
           {{ blog.description }}
         </NuxtLink>
         <div class="blog-list__meta">

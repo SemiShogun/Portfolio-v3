@@ -1,24 +1,43 @@
 // Imports
 // --------------------------------------------------------------
 @import "variables/colors.scss";
+@import "luxbar-min.css";
 
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+// Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // Global element stylings
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: $dark-grey-40;
+  background-color: $background-dark;
   color: $white;
-  max-width: 50em;
+  max-width: 75em;
   margin: 0 auto;
   line-height: 1.5;
+  padding: 0 2.5rem;
 }
 
 a {
   color: $green;
+}
+
+a,
+li,
+button {
   text-decoration: none;
+  list-style: none;
 }
 
 /** Page Transitions */
